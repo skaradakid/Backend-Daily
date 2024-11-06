@@ -19,6 +19,6 @@ def create_list():
     docx2 = docx.read()
     for x in names2:
         file = docx2.replace('name', x)
-        file2 = open(f"mail merge/Input/{x}.txt", "w")
+        file2 = open(f"mail merge/Input/ReadyToSend/{x}.txt", "w")
         file2.write(file)
 create_list()
